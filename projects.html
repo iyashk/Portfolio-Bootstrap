@@ -62,264 +62,277 @@
         <h1>My Projects</h1>
       </div>
     </section>
-    <div class="container">
+    <div class="px-5">
       <div class="row">
-        <div class="col col-sm-12 card mb-3 ms-3" style="max-width: 430px">
-          <div class="card-body">
-            <h5 class="card-title">
-              Picasso Art Bot - A contour mapping & tracing robot using
-              Raspberry Pi.
-            </h5>
-            <h6 class="card-subtitle mb-2 text-muted">Timeline : Jul 2022</h6>
-            <a class="btn btn-dark my-2" data-bs-toggle="collapse" href="#collapseExample" role="button"
-              aria-expanded="false" aria-controls="collapseExample">View More</a>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                Picasso Art Bot - A contour mapping & tracing robot using
+                Raspberry Pi.
+              </h5>
+              <h6 class="card-subtitle mb-2 text-muted">Timeline : Jul 2022</h6>
+              <a class="btn btn-dark my-2" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">View More</a>
 
-            <a href="https://github.com/iyashk/Picasso-Art-Bot" target="_blank"><button class="btn btn-dark my-2">Try
-                out this</button></a>
+              <a href="https://github.com/iyashk/Picasso-Art-Bot" target="_blank"><button class="btn btn-dark my-2">Try
+                  out this</button></a>
 
-            <div class="collapse" id="collapseExample">
-              <div class="card-text card card-body">
-                <ul>
-                  <li>
-                    A hardware implemented robot using Raspberry Pi
-                    microprocessor, motor driver and simple robot kit.
-                  </li>
-                  <li>
-                    Developed an interface using python, which will take
-                    images that are either stored locally or can be fetched
-                    using an external camera.
-                  </li>
-                  <li>
-                    This image now fed to a program that commands a turtlesim
-                    bot in a ROS simulation to trace the contour of the input
-                    image. The contour can also be tuned with adjustments made
-                    to the noise, reducing the complexity etc.
-                  </li>
-                  <li>
-                    Now for every closed loop in the contour, with the help of
-                    multi-threading a new turtlesim bot is generated and
-                    traces the contour.
-                  </li>
-                  <li>
-                    The tracing is simulated in the interface developed and
-                    once the image is traced by all the bots the program now
-                    commands the hardware implemented bot to sketch the
-                    contour on a piece of canvas.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card-footer bg-white mt-0">
-            <strong>Technologies Used : </strong>
-            <em>Python, C++, <abbr title="Robot Operating System">ROS</abbr>,
-              OpenCV.</em>
-          </div>
-        </div>
-        <div class="col col-sm-12 card mb-3 ms-3" style="max-width: 420px">
-          <div class="card-body">
-            <h5 class="card-title">
-              Pneumonia and COVID-19 detection using Convolutional Neural
-              Network (CNN)
-            </h5>
-            <h6 class="card-subtitle mb-2 text-muted">Timeline : Jul 2022</h6>
-            <a class="btn btn-dark" data-bs-toggle="collapse" href="#two" role="button" aria-expanded="false"
-              aria-controls="collapseExample">View More</a>
-
-            <a href="https://github.com/iyashk/Covid-19-and-Pneumonia-Detection-Using-CNN" target="_blank"><button
-                class="btn btn-dark my-2">Try out this</button></a>
-
-            <div class="collapse" id="two">
-              <div class="card-text card card-body">
-                <ul>
-                  <li>
-                    A Deep Learning model based on
-                    <abbr title="Convolutional Neural Networks">CNN</abbr>
-                    that has the capablity to identify pneumonia and COVID-19
-                    based on the X-ray images.
-                  </li>
-                  <li>
-                    The model is trianed based on Chest X-rays of patients to
-                    identify the affected areas of lungs.
-                    <ul>
-                      <em>COVID-19</em>
-                      <li>
-                        the model consists of 3 hidden layers, with "ReLu" as
-                        the activation function.
-                      </li>
-                      <li>
-                        The dataset for COVID-19 detection is from Kaggle
-                        which consists of nearly 2328 patient's records.
-                      </li>
-                      <em>Pneumonia</em>
-                      <li>
-                        This CNN model is consists of 5 hidden layers, with
-                        "ReLu" as the activation functions.
-                      </li>
-                      <li>
-                        The dataset for Pneumonia detection is also from
-                        Kaggle which consits of two classes : Pneumonia and
-                        Normal. There are almost 5863 records in the dataset.
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    Finally using the Pneumonia model we have obtained an
-                    <strong>accuracy</strong> of <em>98.16%</em> and for the
-                    COVID-19 model we have obtained an
-                    <strong>accuracy</strong> of <em>97.5%</em>.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card-footer bg-white mt-0">
-            <strong>Technologies Used : </strong>
-            <em>Keras, Python,
-              <abbr title="Python Imaging Library"> PIL</abbr>, Matplotlib,
-              Pandas.</em>
-          </div>
-        </div>
-        <div class="col col-sm-12 card mb-3 ms-3" style="max-width: 420px">
-          <div class="card-body">
-            <h5 class="card-title">
-              Car Price Prediction using Machine Learning
-            </h5>
-            <h6 class="card-subtitle mb-2 text-muted">Timeline : Nov 2021</h6>
-            <a class="btn btn-dark" data-bs-toggle="collapse" href="#three" role="button" aria-expanded="false"
-              aria-controls="collapseExample">View More</a>
-
-            <a href="https://github.com/iyashk/Car-Price-Prediction/" target="_blank"><button
-                class="btn btn-dark my-2">Try out this</button></a>
-
-            <div class="collapse" id="three">
-              <div class="card-text card card-body">
-                <ul>
-                  <li>
-                    Developed a Machine Learning project that uses the car
-                    dataset from kaggle, which has features such as car price,
-                    kilometers driven, number of owners, fuel type, dealer
-                    type etc.
-                  </li>
-                  <li>
-                    This project makes use of Random Forest Regressor for
-                    predicting the car price for a given set of featues.
-                  </li>
-                  <li>
-                    The inputs to the model is actually given from a webpage
-                    develop using HTML and Flask.
-                  </li>
-                  <li>
-                    Finally when the model is evaluated it acheived an
-                    accuracy of 93.4%
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card-footer bg-white mt-0">
-            <strong>Technologies Used :</strong>
-            <em>Python, Machine Learning, Flask, HTML.</em>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col card mb-3 ms-3">
-          <div class="card-body">
-            <h5 class="card-title">
-              Sudoku Validator using Multi-Threading.
-            </h5>
-            <h6 class="card-subtitle mb-2 text-muted">Timeline : Dec 2021</h6>
-            <a class="btn btn-dark" data-bs-toggle="collapse" href="#four" role="button" aria-expanded="false"
-              aria-controls="collapseExample">View More</a>
-
-            <a href="https://github.com/iyashk/Multi-Threaded-Sudoku-Validator" target="_blank"><button
-                class="btn btn-dark my-2">Try out this</button></a>
-
-            <div class="collapse" id="four">
-              <div class="card-text card card-body">
-                <div class="row px-3">
+              <div class="collapse" id="collapseExample">
+                <div class="card-text card card-body">
                   <ul>
                     <li>
-                      A Multi-Threading based project, the inputs to which are
-                      a set of matrcies of 9x9 size (general sudoku size).
-                      This model evaluates the given input matrices whether
-                      they are solutions of sudoku puzzle or not by checking
-                      the conditions for every element in the matrix.
+                      A hardware implemented robot using Raspberry Pi
+                      microprocessor, motor driver and simple robot kit.
+                    </li>
+                    <li>
+                      Developed an interface using python, which will take
+                      images that are either stored locally or can be fetched
+                      using an external camera.
+                    </li>
+                    <li>
+                      This image now fed to a program that commands a turtlesim
+                      bot in a ROS simulation to trace the contour of the input
+                      image. The contour can also be tuned with adjustments made
+                      to the noise, reducing the complexity etc.
+                    </li>
+                    <li>
+                      Now for every closed loop in the contour, with the help of
+                      multi-threading a new turtlesim bot is generated and
+                      traces the contour.
+                    </li>
+                    <li>
+                      The tracing is simulated in the interface developed and
+                      once the image is traced by all the bots the program now
+                      commands the hardware implemented bot to sketch the
+                      contour on a piece of canvas.
                     </li>
                   </ul>
                 </div>
-                <div class="row">
-                  <div class="col-4">
-                    <div id="list-example" class="list-group">
-                      <a class="list-group-item list-group-item-action" href="#list-item-1">1 Thread Model</a>
-                      <a class="list-group-item list-group-item-action" href="#list-item-2">3 Thread Model</a>
-                      <a class="list-group-item list-group-item-action" href="#list-item-3">11 Thread Model</a>
-                      <a class="list-group-item list-group-item-action" href="#list-item-4">27 Thread Model</a>
-                    </div>
+              </div>
+            </div>
+            <div class="card-footer bg-white mt-0">
+              <strong>Technologies Used : </strong>
+              <em>Python, C++, <abbr title="Robot Operating System">ROS</abbr>,
+                OpenCV.</em>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                Pneumonia and COVID-19 detection using Convolutional Neural
+                Network (CNN)
+              </h5>
+              <h6 class="card-subtitle mb-2 text-muted">Timeline : Jul 2022</h6>
+              <a class="btn btn-dark" data-bs-toggle="collapse" href="#two" role="button" aria-expanded="false"
+                aria-controls="collapseExample">View More</a>
+
+              <a href="https://github.com/iyashk/Covid-19-and-Pneumonia-Detection-Using-CNN" target="_blank"><button
+                  class="btn btn-dark my-2">Try out this</button></a>
+
+              <div class="collapse" id="two">
+                <div class="card-text card card-body">
+                  <ul>
+                    <li>
+                      A Deep Learning model based on
+                      <abbr title="Convolutional Neural Networks">CNN</abbr>
+                      that has the capablity to identify pneumonia and COVID-19
+                      based on the X-ray images.
+                    </li>
+                    <li>
+                      The model is trianed based on Chest X-rays of patients to
+                      identify the affected areas of lungs.
+                      <ul>
+                        <em>COVID-19</em>
+                        <li>
+                          the model consists of 3 hidden layers, with "ReLu" as
+                          the activation function.
+                        </li>
+                        <li>
+                          The dataset for COVID-19 detection is from Kaggle
+                          which consists of nearly 2328 patient's records.
+                        </li>
+                        <em>Pneumonia</em>
+                        <li>
+                          This CNN model is consists of 5 hidden layers, with
+                          "ReLu" as the activation functions.
+                        </li>
+                        <li>
+                          The dataset for Pneumonia detection is also from
+                          Kaggle which consits of two classes : Pneumonia and
+                          Normal. There are almost 5863 records in the dataset.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Finally using the Pneumonia model we have obtained an
+                      <strong>accuracy</strong> of <em>98.16%</em> and for the
+                      COVID-19 model we have obtained an
+                      <strong>accuracy</strong> of <em>97.5%</em>.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-white mt-0">
+              <strong>Technologies Used : </strong>
+              <em>Keras, Python,
+                <abbr title="Python Imaging Library"> PIL</abbr>, Matplotlib,
+                Pandas.</em>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3 ">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                Car Price Prediction using Machine Learning
+              </h5>
+              <h6 class="card-subtitle mb-2 text-muted">Timeline : Nov 2021</h6>
+              <a class="btn btn-dark" data-bs-toggle="collapse" href="#three" role="button" aria-expanded="false"
+                aria-controls="collapseExample">View More</a>
+
+              <a href="https://github.com/iyashk/Car-Price-Prediction/" target="_blank"><button
+                  class="btn btn-dark my-2">Try out this</button></a>
+
+              <div class="collapse" id="three">
+                <div class="card-text card card-body">
+                  <ul>
+                    <li>
+                      Developed a Machine Learning project that uses the car
+                      dataset from kaggle, which has features such as car price,
+                      kilometers driven, number of owners, fuel type, dealer
+                      type etc.
+                    </li>
+                    <li>
+                      This project makes use of Random Forest Regressor for
+                      predicting the car price for a given set of featues.
+                    </li>
+                    <li>
+                      The inputs to the model is actually given from a webpage
+                      develop using HTML and Flask.
+                    </li>
+                    <li>
+                      Finally when the model is evaluated it acheived an
+                      accuracy of 93.4%
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-white mt-0">
+              <strong>Technologies Used :</strong>
+              <em>Python, Machine Learning, Flask, HTML.</em>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col  mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                Sudoku Validator using Multi-Threading.
+              </h5>
+              <h6 class="card-subtitle mb-2 text-muted">Timeline : Dec 2021</h6>
+              <a class="btn btn-dark" data-bs-toggle="collapse" href="#four" role="button" aria-expanded="false"
+                aria-controls="collapseExample">View More</a>
+
+              <a href="https://github.com/iyashk/Multi-Threaded-Sudoku-Validator" target="_blank"><button
+                  class="btn btn-dark my-2">Try out this</button></a>
+
+              <div class="collapse" id="four">
+                <div class="card-text card card-body">
+                  <div class="row px-3">
+                    <ul>
+                      <li>
+                        A Multi-Threading based project, the inputs to which are
+                        a set of matrcies of 9x9 size (general sudoku size).
+                        This model evaluates the given input matrices whether
+                        they are solutions of sudoku puzzle or not by checking
+                        the conditions for every element in the matrix.
+                      </li>
+                    </ul>
                   </div>
-                  <div class="col-8" style="max-height: 200px; overflow: scroll;">
-                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
-                      class="scrollspy-example" tabindex="0">
-                      <h4 id="list-item-1">1 Thread model</h4>
-                      <p>
-                      <ul>
-                        <li>
-                          This model makes use of a single thread(instance of an execution of a program) to check for
-                          all conditions.
-                        </li>
-                        <li>
-                          This single is used to check for same elements in the column, row and 3x3 grid inside the
-                          matrix.
-                        </li>
-                        <li>
-                          The thread is cancelled after every process. This is done for all 81 elements.
-                        </li>
-                      </ul>
-                      </p>
-                      <h4 id="list-item-2">3 Thread Model</h4>
-                      <p>
-                      <ul>
-                        <li>
-                          This model create three threads for checking. One for checking in a row, one for checking in a
-                          columnn and the other one for checking in the 3x3 row.
-                        </li>
-                        <li>
-                          For every element these 3 threads are created and after checking they are cancelled.
-                        </li>
-                      </ul>
-                      </p>
-                      <h4 id="list-item-3">11 Thread Model</h4>
-                      <p>
-                      <ul>
-                        <li>
-                          This uses 11 threads in total, one thread to check every row, one thread to check every
-                          column.
-                        </li>
-                        <li>
-                          And finally other 9 threads are used to check for all other 3x3 grids.
-                        </li>
-                      </ul>
-                      </p>
-                      <h4 id="list-item-4">27 Thread</h4>
-                      <p>
-                      <ul>
-                        <li>
-                          In this model every row, every column and every 3x3 grid is checked using a seperate thread.
-                        </li>
-                      </ul>
-                      </p>
+                  <div class="row">
+                    <div class="col-4">
+                      <div id="list-example" class="list-group">
+                        <a class="list-group-item list-group-item-action" href="#list-item-1">1 Thread Model</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-2">3 Thread Model</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-3">11 Thread Model</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-4">27 Thread Model</a>
+                      </div>
+                    </div>
+                    <div class="col-8" style="max-height: 200px; overflow: scroll;">
+                      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                        class="scrollspy-example" tabindex="0">
+                        <h4 id="list-item-1">1 Thread model</h4>
+                        <p>
+                        <ul>
+                          <li>
+                            This model makes use of a single thread(instance of an execution of a program) to check for
+                            all conditions.
+                          </li>
+                          <li>
+                            This single is used to check for same elements in the column, row and 3x3 grid inside the
+                            matrix.
+                          </li>
+                          <li>
+                            The thread is cancelled after every process. This is done for all 81 elements.
+                          </li>
+                        </ul>
+                        </p>
+                        <h4 id="list-item-2">3 Thread Model</h4>
+                        <p>
+                        <ul>
+                          <li>
+                            This model create three threads for checking. One for checking in a row, one for checking in
+                            a
+                            columnn and the other one for checking in the 3x3 row.
+                          </li>
+                          <li>
+                            For every element these 3 threads are created and after checking they are cancelled.
+                          </li>
+                        </ul>
+                        </p>
+                        <h4 id="list-item-3">11 Thread Model</h4>
+                        <p>
+                        <ul>
+                          <li>
+                            This uses 11 threads in total, one thread to check every row, one thread to check every
+                            column.
+                          </li>
+                          <li>
+                            And finally other 9 threads are used to check for all other 3x3 grids.
+                          </li>
+                        </ul>
+                        </p>
+                        <h4 id="list-item-4">27 Thread</h4>
+                        <p>
+                        <ul>
+                          <li>
+                            In this model every row, every column and every 3x3 grid is checked using a seperate thread.
+                          </li>
+                        </ul>
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card-footer bg-white mt-0">
-            <strong>Technologies Used : </strong>
-            <em>Keras, Python,
-              <abbr title="Python Imaging Library"> PIL</abbr>, Matplotlib,
-              Pandas.</em>
+            <div class="card-footer bg-white mt-0">
+              <strong>Technologies Used : </strong>
+              <em>Keras, Python,
+                <abbr title="Python Imaging Library"> PIL</abbr>, Matplotlib,
+                Pandas.</em>
+            </div>
           </div>
         </div>
       </div>
